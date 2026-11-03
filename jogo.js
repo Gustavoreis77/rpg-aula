@@ -77,13 +77,11 @@ while (jogando) {
       local = "vila";
     } 
       else if (escolha === "2") {
-      if (vida < 25) {
-        vida = vida + 3;
-        console.log("A água é sagrada. Vida: " + vida)}
-      if (vida > 24) {
-        vida = vida - 3
-      console.log("Você está estufado");}
-    } 
+      vida = vida + 3;
+        if (vida > 10) {
+       vida = 10
+      }
+      console.log("A água é sagrada. Vida: " + vida)}
      else if (escolha === "3" && inventario.includes("moeda furada")) {
       console.log("A moeda cai sem fazer barulho. Uma corda sobe do fundo do poço, sozinha.");
             inventario.push("corda")
